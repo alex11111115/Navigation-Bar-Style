@@ -85,7 +85,7 @@ Want to make it your own? You can easily customize:
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="screenshot1.jpg" width="32%" />
+  <img src="screenshot1.jpg" width="100%" />
 </p>
 
 ## 🚀 Why You'll Love It
