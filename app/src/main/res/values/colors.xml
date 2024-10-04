@@ -1,0 +1,14 @@
+<resources>
+	<color name="colorPrimary">#2196F3</color>
+	<color name="colorPrimaryDark">#2196F3</color>
+	<color name="colorAccent">#2196F3</color>
+	<color name="colorControlHighlight">#0096F3</color>
+	<color name="colorControlNormal">#2196F3</color>
+    
+    <color name="bottom_nav_icon_color">#FFffffff</color>
+    <color name="bottom_nav_text_color">#FFffffff</color>
+    <color name="bottom_nav_background">#802196F3</color>
+    <color name="bottom_nav_ripple_color">#550096F3</color>
+    <color name="bottom_nav_active_text_color">#2196F3</color>
+    <color name="bottom_nav_inactive_text_color">#ff444444</color>
+</resources>

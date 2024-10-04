@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- نمط BottomNavigationView المخصص -->
+        <style name="CustomBottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+            <!-- تحديد ألوان الأيقونات -->
+            <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+            <!-- تحديد ألوان النص -->
+            <item name="itemTextColor">@color/bottom_nav_text_color</item>
+            <!-- حجم الأيقونة -->
+            <item name="itemIconSize">24dp</item>
+            <!-- وضعية عرض التسمية -->
+            <item name="labelVisibilityMode">labeled</item>
+            <!-- تأثير الانتقال بين الحالات النشطة وغير النشطة -->
+            <item name="itemRippleColor">@color/bottom_nav_ripple_color</item>
+            <!-- نمط النص النشط -->
+            <item name="itemTextAppearanceActive">@style/CustomBottomNavigationView.TextAppearanceActive</item>
+            <!-- نمط النص غير النشط -->
+            <item name="itemTextAppearanceInactive">@style/CustomBottomNavigationView.TextAppearanceInactive</item>
+            <!-- تحديد الخلفية -->
+            <item name="backgroundTint">#00000000</item>
+            <!-- تغيير حجم النص عند التفعيل -->
+            <!-- <item name="itemTextScaleOnHighlight">1.1</item> -->
+        </style>
+        <!-- نمط النص للحالة النشطة -->
+        <style name="CustomBottomNavigationView.TextAppearanceActive" parent="TextAppearance.Material3.LabelSmall">
+            <item name="android:textSize">14sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">@color/bottom_nav_active_text_color</item>
+        </style>
+        <!-- نمط النص للحالة غير النشطة -->
+        <style name="CustomBottomNavigationView.TextAppearanceInactive" parent="TextAppearance.Material3.LabelSmall">
+            <item name="android:textSize">14sp</item>
+            <item name="android:textColor">@color/bottom_nav_inactive_text_color</item>
+        </style>
+
+    <!-- النمط الأساسي للتطبيق -->
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+    </style>
+    <!-- نمط FullScreen -->
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- Overlays للنوافذ -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Light"/>
+    <!-- أنماط Dialog مخصصة -->
+    <style name="ThemeOverlay.Material3.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <!-- مثال لعناصر أخرى يمكن إضافتها -->
+        <!-- <item name="android:windowBackground">?attr/colorSurfaceMedium</item> -->
+        <!-- <item name="android:windowDimBehind">0.3</item> -->
+    </style>
+    <style name="Dialog.Material3.Alert" parent="ThemeOverlay.Material3.Dialog">
+        <!--<item name="android:windowShapeBackground">@style/Shape.Material3.Dialog.Alert</item>-->
+    </style>
+    <style name="Dialog.Material3.Menu" parent="ThemeOverlay.Material3.Dialog">
+        <!--<item name="android:windowShapeBackground">@style/Shape.Material3.Dialog.Menu</item>-->
+    </style>
+    <!-- أنماط مخصصة لشكل النوافذ -->
+    <style name="Shape.Material3.Dialog.Alert" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.MediumComponent</item>
+    </style>
+    <style name="Shape.Material3.Dialog.Menu" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.SmallComponent</item>
+    </style>
+</resources>
